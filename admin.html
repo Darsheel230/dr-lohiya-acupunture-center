@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Admin | DR. LOHIYA ACUPUNTURE CENTER</title>
+  <meta
+    name="description"
+    content="Private clinic admin page for live appointment alerts and recent bookings."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone-frame">
+      <div class="app-screen">
+        <header class="hero-card">
+          <div class="status-row">
+            <span class="status-pill">Clinic Staff Only</span>
+            <span class="status-location" id="liveStatusBadge">Connecting alerts...</span>
+          </div>
+
+          <div class="brand-row">
+            <div class="brand-logo">
+              <img src="clinic-logo.jpg" alt="DR. LOHIYA ACUPUNTURE CENTER logo">
+            </div>
+            <div class="brand-copy">
+              <p class="kicker">Admin Dashboard</p>
+              <h1>Appointment Alerts</h1>
+              <p class="tagline">Monitor new patient bookings live without showing this on the public website.</p>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <div>
+              <p class="hero-note">Keep this page open on the clinic computer to receive instant booking alerts.</p>
+              <p class="hero-subnote">Patients will only see the booking website. This dashboard stays separate.</p>
+            </div>
+
+            <div class="quick-book-card">
+              <p class="section-label">Public Booking Link</p>
+              <h2>Patient app</h2>
+              <p>Share this page with patients for bookings while this admin screen stays private to the clinic.</p>
+              <a href="/" class="primary-link">Open Main Website</a>
+            </div>
+          </div>
+        </header>
+
+        <section class="section-card admin-section" id="alerts">
+          <div class="section-heading">
+            <p class="section-label">Clinic Dashboard</p>
+            <h2>Live appointment alerts</h2>
+          </div>
+
+          <div class="dashboard-summary">
+            <article>
+              <span>Total Bookings</span>
+              <strong id="appointmentCount">0</strong>
+            </article>
+            <article>
+              <span>Notification Status</span>
+              <strong id="notificationStatus">Waiting</strong>
+            </article>
+          </div>
+
+          <div class="alert-actions">
+            <button type="button" id="enableNotificationsButton" class="secondary-action">Enable Browser Alerts</button>
+            <p id="liveFeedStatus" class="live-feed-status">Connecting to live booking feed...</p>
+          </div>
+
+          <div id="liveToast" class="live-toast" aria-live="polite"></div>
+
+          <div class="appointments-panel">
+            <div class="appointments-panel-header">
+              <h3>Recent Appointments</h3>
+              <span>Newest bookings appear here instantly</span>
+            </div>
+            <div id="appointmentsList" class="appointments-list"></div>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Primary">
+          <a href="#alerts" class="active">Alerts</a>
+          <a href="/" >Website</a>
+          <a href="/#book">Book</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

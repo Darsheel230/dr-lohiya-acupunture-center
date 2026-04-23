@@ -1,0 +1,12 @@
+{
+  "name": "dr-lohiya-acupunture-center",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Appointment booking app with SQLite storage and live notifications for DR. LOHIYA ACUPUNTURE CENTER.",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

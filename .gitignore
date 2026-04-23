@@ -1,0 +1,5 @@
+appointments.db
+localtunnel.log
+localtunnel-error.log
+node_modules/
+.env

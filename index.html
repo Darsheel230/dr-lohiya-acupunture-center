@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DR. LOHIYA ACUPUNTURE CENTER</title>
+  <meta
+    name="description"
+    content="Mobile-friendly appointment booking app for DR. LOHIYA ACUPUNTURE CENTER in Cidco Colony, Aurangabad."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone-frame">
+      <div class="app-screen">
+        <header class="hero-card">
+          <div class="status-row">
+            <span class="status-pill">Trusted Wellness Care</span>
+            <span class="status-location">Cidco Colony, Aurangabad</span>
+          </div>
+
+          <div class="brand-row">
+            <div class="brand-logo">
+              <img src="clinic-logo.jpg" alt="DR. LOHIYA ACUPUNTURE CENTER logo">
+            </div>
+            <div class="brand-copy">
+              <p class="kicker">Clinic App</p>
+              <h1>DR. LOHIYA ACUPUNTURE CENTER</h1>
+              <p class="tagline">Book an appointment with calm, confidence, and care.</p>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <div>
+              <p class="hero-note">Holistic healing for pain relief, balance, and wellness support.</p>
+              <div class="hero-metrics">
+                <article>
+                  <strong>20+</strong>
+                  <span>Years overall experience</span>
+                </article>
+                <article>
+                  <strong>94%</strong>
+                  <span>Patient recommendation</span>
+                </article>
+                <article>
+                  <strong>16 yrs</strong>
+                  <span>As specialist</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="quick-book-card">
+              <p class="section-label">Quick Booking</p>
+              <h2>Reserve your clinic visit</h2>
+              <p>Choose a date, share your concern, and confirm your appointment in a few taps.</p>
+              <a href="#book" class="primary-link">Book Appointment</a>
+            </div>
+          </div>
+        </header>
+
+        <section class="doctor-card section-card" id="doctor">
+          <div class="section-heading">
+            <p class="section-label">About The Doctor</p>
+            <h2>Dr. Sarang Lohiya</h2>
+          </div>
+
+          <div class="doctor-overview">
+            <div class="doctor-badge">
+              <span class="claimed-badge">Profile is claimed</span>
+              <h3>MBBS, MD - Acupuncture</h3>
+              <p>Therapist, Acupuncturist, Acupressure Specialist</p>
+            </div>
+
+            <div class="doctor-stats">
+              <div><strong>20 Years</strong><span>Experience overall</span></div>
+              <div><strong>16 Years</strong><span>As specialist</span></div>
+              <div><strong>94%</strong><span>Based on 16 patients</span></div>
+            </div>
+          </div>
+
+          <p class="doctor-description">
+            Dr. Sarang Lohiya is an experienced acupuncturist and acupressure specialist practicing at
+            Dr. Lohiya Acupuncture Centre in Cidco Colony, Aurangabad. He completed MBBS from Mahatma Gandhi
+            Mission's Medical College, Aurangabad in 2004 and MD - Acupuncture from Open International University
+            Medicina Alternativa, Sri Lanka in 2005. He is also a member of the International Acupuncture Society,
+            Hong Kong.
+          </p>
+        </section>
+
+        <section class="service-strip">
+          <article class="mini-card">
+            <p class="section-label">Popular Care</p>
+            <h3>Cupping Therapy</h3>
+            <p>Traditional supportive treatment for pain relief and better circulation.</p>
+          </article>
+          <article class="mini-card">
+            <p class="section-label">Healing Focus</p>
+            <h3>Moxibustion</h3>
+            <p>Warmth-based therapy designed to improve energy flow and comfort.</p>
+          </article>
+          <article class="mini-card">
+            <p class="section-label">Special Support</p>
+            <h3>Back Pain Care</h3>
+            <p>Consultation-led therapy plans for pain management and mobility support.</p>
+          </article>
+        </section>
+
+        <section class="section-card treatments-card">
+          <div class="section-heading">
+            <p class="section-label">Clinic Services</p>
+            <h2>Treatments available</h2>
+          </div>
+
+          <div class="treatment-grid">
+            <span>Cupping Therapy</span>
+            <span>Moxibustion</span>
+            <span>Catgut Embedding</span>
+            <span>Autoimmunisation</span>
+            <span>Back Pain Physiotherapy</span>
+            <span>Acupressure Sessions</span>
+          </div>
+        </section>
+
+        <section class="section-card schedule-card">
+          <div class="section-heading">
+            <p class="section-label">Visit Timing</p>
+            <h2>Clinic availability</h2>
+          </div>
+
+          <div class="schedule-list">
+            <div class="schedule-item">
+              <span>Monday to Friday</span>
+              <strong>10:00 AM - 2:00 PM</strong>
+            </div>
+            <div class="schedule-item">
+              <span>Evening hours</span>
+              <strong>5:00 PM - 8:00 PM</strong>
+            </div>
+            <div class="schedule-item">
+              <span>Saturday</span>
+              <strong>10:00 AM - 1:00 PM</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-card booking-section" id="book">
+          <div class="section-heading">
+            <p class="section-label">Appointment</p>
+            <h2>Book your consultation</h2>
+          </div>
+
+          <form id="appointmentForm" class="appointment-form">
+            <label>
+              Patient Name
+              <input type="text" name="patientName" placeholder="Enter full name" required>
+            </label>
+
+            <label>
+              Mobile Number
+              <input type="tel" name="phone" placeholder="Enter mobile number" required>
+            </label>
+
+            <label>
+              Select Service
+              <select name="service" required>
+                <option value="">Choose treatment</option>
+                <option value="General Consultation">General Consultation</option>
+                <option value="Acupuncture Session">Acupuncture Session</option>
+                <option value="Acupressure Therapy">Acupressure Therapy</option>
+                <option value="Cupping Therapy">Cupping Therapy</option>
+                <option value="Back Pain Physiotherapy">Back Pain Physiotherapy</option>
+              </select>
+            </label>
+
+            <div class="dual-inputs">
+              <label>
+                Appointment Date
+                <input type="date" name="date" required>
+              </label>
+
+              <label>
+                Preferred Time
+                <select name="time" required>
+                  <option value="">Choose slot</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:30 AM">11:30 AM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="5:30 PM">5:30 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Symptoms / Reason
+              <textarea name="reason" rows="4" placeholder="Describe your concern or pain area" required></textarea>
+            </label>
+
+            <button type="submit">Confirm Appointment</button>
+          </form>
+
+          <div id="confirmationMessage" class="confirmation-message" aria-live="polite"></div>
+        </section>
+
+        <section class="section-card qr-section">
+          <div class="section-heading">
+            <p class="section-label">Mobile Access</p>
+            <h2>Scan QR code to open on phone</h2>
+          </div>
+
+          <div class="qr-card">
+            <img src="clinic-qr.png" alt="QR code to open the clinic booking app on mobile">
+            <p>Scan this code from your mobile to open the clinic app on the same Wi-Fi network.</p>
+            <a href="http://192.168.1.9:8080/" class="qr-link">http://192.168.1.9:8080/</a>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Primary">
+          <a href="#" class="active">Home</a>
+          <a href="#doctor">Doctor</a>
+          <a href="#book">Book</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
